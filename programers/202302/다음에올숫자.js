@@ -13,10 +13,10 @@
 // [1, 2, 3, 4]	5
 // [2, 4, 8]	16
 
-function solution(common) {
+const solution = (common) => {
   const answer =
     common[1] - common[0] === common[2] - common[1]
       ? common.pop() + (common[1] - common[0])
       : common.pop() * (common[1] / common[0]);
   return answer;
-}
+};
