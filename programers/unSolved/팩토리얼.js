@@ -12,9 +12,9 @@
 // 3628800	10
 // 7	3
 
-function solution(n) {
+const solution = (n) => {
   let i = 1;
   let f = 1;
   while (f * i < n) f *= ++i;
   return i;
-}
+};
