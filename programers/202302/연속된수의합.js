@@ -12,7 +12,7 @@
 // 4	14	[2, 3, 4, 5]
 // 5	5	[-1, 0, 1, 2, 3]
 
-function solution(num, total) {
+const solution = (num, total) => {
   let answer = Array(num).fill(0);
 
   if (num % 2 === 0) {
@@ -43,4 +43,4 @@ function solution(num, total) {
 
     return answer;
   }
-}
+};
