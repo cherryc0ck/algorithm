@@ -11,3 +11,4 @@
 // strlist	result
 // ["We", "are", "the", "world!"]	[2, 3, 3, 6]
 // ["I", "Love", "Programmers."]	[1, 4, 12]
+const solution = (strlist) => strlist.map((v) => v.length);
