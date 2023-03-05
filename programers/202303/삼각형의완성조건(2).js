@@ -26,7 +26,6 @@ const solution = (sides) => {
   }
   return result;
 };
-
 // 다른사람 풀이
 function solution(sides) {
   return Math.min(...sides) * 2 - 1;
