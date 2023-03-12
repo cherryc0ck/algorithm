@@ -26,3 +26,8 @@ const solution = (spell, dic) =>
   })
     ? 1
     : 2;
+
+// 다른사람 풀이
+function solution(p, d) {
+  return d.some((s) => p.sort().toString() == [...s].sort().toString()) ? 1 : 2;
+}
