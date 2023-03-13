@@ -20,3 +20,9 @@ const solution = (arr) => {
     return arr.filter((el) => v < el).length + 1;
   });
 };
+
+// 다른 사람풀이
+function solution(emergency) {
+  let sorted = emergency.slice().sort((a, b) => b - a);
+  return emergency.map((v) => sorted.indexOf(v) + 1);
+}
