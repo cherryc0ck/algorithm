@@ -12,6 +12,7 @@
 // [1, 2, 3, 4, 5]	[2, 3]
 // [1, 3, 5, 7]	[0, 4]
 
+// 내 풀이
 const solution = (numList) => {
   let answer = [0, 0];
   let [j, h] = answer;

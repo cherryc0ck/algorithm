@@ -10,3 +10,6 @@
 // my_string	return
 // "jaron"	"noraj"
 // "bread"	"daerb"
+
+// 내 풀이
+const solution = (myStr) => [...myStr].reverse().join("");
