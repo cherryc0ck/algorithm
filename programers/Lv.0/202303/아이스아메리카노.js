@@ -10,4 +10,6 @@
 // money	result
 // 5,500	[1, 0]
 // 15,000	[2, 4000]
+
+// 내 풀이
 const solution = (money) => [Math.floor(money / 5500), money % 5500];
