@@ -11,3 +11,6 @@
 // 7	1
 // 1	1
 // 15	3
+
+// 내 풀이
+const solution = (n) => Math.ceil(n / 7);
