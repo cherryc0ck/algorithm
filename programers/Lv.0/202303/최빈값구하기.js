@@ -13,6 +13,7 @@
 // [1, 1, 2, 2]	-1
 // [1]	1
 
+// 내 풀이
 const solution = (array) => {
   const newObj = array.reduce(
     (acc, cur) => {
