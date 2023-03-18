@@ -13,6 +13,7 @@
 // [1, 2, 7, 10, 11]	7
 // [9, -1, 0]	0
 
+// 내 풀이
 const solution = (array) => {
   let idx = Math.floor(array.length / 2);
   return array.sort((a, b) => a - b)[idx];
