@@ -13,3 +13,9 @@
 // dots	result
 // [[1, 1], [2, 1], [2, 2], [1, 2]]	1
 // [[-1, -1], [1, 1], [1, -1], [-1, 1]]	4
+
+const solution = (dots) => {
+  const x = dots.map((v) => v[0]);
+  const y = dots.map((v) => v[1]);
+  return (Math.max(...x) - Math.min(...x)) * (Math.max(...y) - Math.min(...y));
+};
