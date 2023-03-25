@@ -1,5 +1,25 @@
 // 내 풀이
 const solution = (lines) => {
+  const result = [];
+  const arr = lines
+    .map((line) => {
+      const len = Math.abs(line[0] - line[1]);
+      return Array(len)
+        .fill(line[0])
+        .map((v, i) => v + i);
+    })
+    .flat()
+    .sort()
+    .reduce((acc, cur) => {
+      acc === cur && result.push(cur);
+      return cur;
+    });
+
+  return [...new Set(result)].length;
+};
+
+// 다른 사람 풀이
+const solution2 = (lines) => {
   const arr = lines.flatMap(([x1, x2]) =>
     Array.from({ length: Math.abs(x2 - x1) }, (_, i) => i + x1)
   );
@@ -12,7 +32,7 @@ const solution = (lines) => {
 };
 
 // 다른 사람 풀이
-function solution2(lines) {
+function solution3(lines) {
   let line = new Array(200).fill(0);
 
   lines.forEach(([a, b]) => {

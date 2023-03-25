@@ -1,3 +1,4 @@
+// 내 풀이
 const solution = (n) => {
   let x = 0;
   let answer = false;
