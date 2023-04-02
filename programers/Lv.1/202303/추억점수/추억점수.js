@@ -1,3 +1,4 @@
+// 내 풀이
 const solution = (name, score, photo) => {
   let obj = {};
   name.map((v, i) => (obj[v] = score[i]));
