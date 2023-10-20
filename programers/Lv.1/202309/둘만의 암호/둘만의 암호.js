@@ -1,3 +1,4 @@
+// 내 풀이
 function solution(s, skip, index) {
   const alphabet = [
     "a",
